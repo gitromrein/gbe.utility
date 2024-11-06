@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4944AF3B-4004-3E1B-B24B-77626B24FA08}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\USER\GitHub\gitreinrom\Dina\Units_Tests\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/USER/GitHub/gitreinrom/Dina/Units_Tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\ST\STM32CubeCLT_1.16.0\CMake\bin\cmake.exe -SC:/USER/GitHub/gitreinrom/Dina/Units_Tests -BC:/USER/GitHub/gitreinrom/Dina/Units_Tests --check-stamp-file C:/USER/GitHub/gitreinrom/Dina/Units_Tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\USER\GitHub\gitreinrom\Dina\Units_Tests\CMakeFiles\3.28.1\CMakeCCompiler.cmake;C:\USER\GitHub\gitreinrom\Dina\Units_Tests\CMakeFiles\3.28.1\CMakeCXXCompiler.cmake;C:\USER\GitHub\gitreinrom\Dina\Units_Tests\CMakeFiles\3.28.1\CMakeRCCompiler.cmake;C:\USER\GitHub\gitreinrom\Dina\Units_Tests\CMakeFiles\3.28.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\USER\GitHub\gitreinrom\Dina\Units_Tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/USER/GitHub/gitreinrom/Dina/Units_Tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\ST\STM32CubeCLT_1.16.0\CMake\bin\cmake.exe -SC:/USER/GitHub/gitreinrom/Dina/Units_Tests -BC:/USER/GitHub/gitreinrom/Dina/Units_Tests --check-stamp-file C:/USER/GitHub/gitreinrom/Dina/Units_Tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\USER\GitHub\gitreinrom\Dina\Units_Tests\CMakeFiles\3.28.1\CMakeCCompiler.cmake;C:\USER\GitHub\gitreinrom\Dina\Units_Tests\CMakeFiles\3.28.1\CMakeCXXCompiler.cmake;C:\USER\GitHub\gitreinrom\Dina\Units_Tests\CMakeFiles\3.28.1\CMakeRCCompiler.cmake;C:\USER\GitHub\gitreinrom\Dina\Units_Tests\CMakeFiles\3.28.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\USER\GitHub\gitreinrom\Dina\Units_Tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/USER/GitHub/gitreinrom/Dina/Units_Tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\ST\STM32CubeCLT_1.16.0\CMake\bin\cmake.exe -SC:/USER/GitHub/gitreinrom/Dina/Units_Tests -BC:/USER/GitHub/gitreinrom/Dina/Units_Tests --check-stamp-file C:/USER/GitHub/gitreinrom/Dina/Units_Tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\USER\GitHub\gitreinrom\Dina\Units_Tests\CMakeFiles\3.28.1\CMakeCCompiler.cmake;C:\USER\GitHub\gitreinrom\Dina\Units_Tests\CMakeFiles\3.28.1\CMakeCXXCompiler.cmake;C:\USER\GitHub\gitreinrom\Dina\Units_Tests\CMakeFiles\3.28.1\CMakeRCCompiler.cmake;C:\USER\GitHub\gitreinrom\Dina\Units_Tests\CMakeFiles\3.28.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\USER\GitHub\gitreinrom\Dina\Units_Tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/USER/GitHub/gitreinrom/Dina/Units_Tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\ST\STM32CubeCLT_1.16.0\CMake\bin\cmake.exe -SC:/USER/GitHub/gitreinrom/Dina/Units_Tests -BC:/USER/GitHub/gitreinrom/Dina/Units_Tests --check-stamp-file C:/USER/GitHub/gitreinrom/Dina/Units_Tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\ST\STM32CubeCLT_1.16.0\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\USER\GitHub\gitreinrom\Dina\Units_Tests\CMakeFiles\3.28.1\CMakeCCompiler.cmake;C:\USER\GitHub\gitreinrom\Dina\Units_Tests\CMakeFiles\3.28.1\CMakeCXXCompiler.cmake;C:\USER\GitHub\gitreinrom\Dina\Units_Tests\CMakeFiles\3.28.1\CMakeRCCompiler.cmake;C:\USER\GitHub\gitreinrom\Dina\Units_Tests\CMakeFiles\3.28.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\USER\GitHub\gitreinrom\Dina\Units_Tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\USER\GitHub\gitreinrom\Dina\Units_Tests\ZERO_CHECK.vcxproj">
+      <Project>{4968B265-8BFF-3A56-9102-B29AA9BE5B57}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\USER\GitHub\gitreinrom\Dina\Units_Tests\gbe.dev\tests\dina_dev_test.vcxproj">
+      <Project>{BDD7CC9E-AB5F-3BC9-9334-191E4976B5BD}</Project>
+      <Name>dina_dev_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\USER\GitHub\gitreinrom\Dina\Units_Tests\gbe.utility\tests\dina_utility_test.vcxproj">
+      <Project>{86A3AB1B-388D-31E1-B290-0109CDDD9416}</Project>
+      <Name>dina_utility_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\USER\GitHub\gitreinrom\Dina\Units_Tests\googletest\googlemock\gmock.vcxproj">
+      <Project>{FDC4B585-B4FF-3AE5-BC0D-D4B806B12BC6}</Project>
+      <Name>gmock</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\USER\GitHub\gitreinrom\Dina\Units_Tests\googletest\googlemock\gmock_main.vcxproj">
+      <Project>{7EA48D52-10FC-3A89-8020-2CC19957372E}</Project>
+      <Name>gmock_main</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\USER\GitHub\gitreinrom\Dina\Units_Tests\googletest\googletest\gtest.vcxproj">
+      <Project>{AECC0DA8-D369-3AA6-898D-0F8707B457EE}</Project>
+      <Name>gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\USER\GitHub\gitreinrom\Dina\Units_Tests\googletest\googletest\gtest_main.vcxproj">
+      <Project>{8CE5FF7C-4EAD-3648-84F9-03A958370B27}</Project>
+      <Name>gtest_main</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

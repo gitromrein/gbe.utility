@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\USER\GitHub\gitreinrom\Dina\Units_Tests\gbe.utility\CMakeFiles\faeb047a026f22da81d12872868d227b\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A4AC9EB4-B3B7-35EB-934D-B3903AC098ED}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
