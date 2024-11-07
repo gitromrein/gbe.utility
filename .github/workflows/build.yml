@@ -35,16 +35,18 @@ jobs:
         run: ls build/gbe.utility/
       - name: LS dir tests
         run: ls build/gbe.utility/tests
-      #- name: Run tests to generate coverage statistics
-      #  run: |
-      #    ./build/gbe.utility/tests/dina_utility_test
+      - name: Run tests to generate coverage statistics
+        run: |
+          ./build/gbe.utility/tests/dina_utility_test --gtest_output=xml
       - name: LS dir tests NACH
         run: ls build/gbe.utility/tests
       - name: Collect coverage into one XML report
         run: |
           gcovr --sonarqube > coverage.xml
-      - name: CAT 
+      - name: CAT Cover
         run: cat coverage.xml
+      - name: CAT Units
+        run: cat test_detail.xml
       - name: Run sonar-scanner
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
