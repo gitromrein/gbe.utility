@@ -26,6 +26,8 @@ jobs:
         run: ls build/
       - name: LS dir gbe.utility
         run: ls build/gbe.utility/
+      - name: LS dir tests
+        run: ls build/gbe.utility/tests
       - name: Run sonar-scanner
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
