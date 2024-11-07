@@ -46,7 +46,7 @@ jobs:
       - name: CAT Cover
         run: cat coverage.xml
       - name: CAT Units
-        run: cat test_detail.xml
+        run: cat /utest/dina_utility_test.xml
       - name: Run sonar-scanner
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
