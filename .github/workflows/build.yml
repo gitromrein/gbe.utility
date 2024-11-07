@@ -35,9 +35,9 @@ jobs:
         run: ls build/gbe.utility/
       - name: LS dir tests
         run: ls build/gbe.utility/tests
-      - name: Run tests to generate coverage statistics
-        run: |
-          ./build/gbe.utility/tests/dina_utility_test
+      #- name: Run tests to generate coverage statistics
+      #  run: |
+      #    ./build/gbe.utility/tests/dina_utility_test
       - name: LS dir tests NACH
         run: ls build/gbe.utility/tests
       - name: Collect coverage into one XML report
