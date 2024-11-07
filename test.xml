@@ -1,10 +1,10 @@
 <testExecutions version="1">
-  <file path="testx/ClassOneTest.xoo">
-	<testCase name="test1" duration="5"/>
+  <file path="gbe.utility\tests\version.cpp">
+	<testCase name="VersionTest" duration="5"/>
 	<testCase name="test2" duration="500">
 	  <skipped/>
 	</testCase>
-	<testCase name="test3" duration="100">
+	<testCase name="VersionTest" duration="100">
 	  <failure/>
 	</testCase>
 	<testCase name="test4" duration="500">
