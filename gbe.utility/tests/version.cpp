@@ -4,7 +4,7 @@
 
 TEST(VersionTest, Constructor) {
     gobeyond::utility::Version v{1, 2, 3};
-    EXPECT_EQ(v.major, 1);
+    EXPECT_EQ(v.major, 2);
     EXPECT_EQ(v.minor, 2);
     EXPECT_EQ(v.patch, 3);
 
