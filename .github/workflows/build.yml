@@ -37,7 +37,7 @@ jobs:
         run: ls build/gbe.utility/tests
       - name: Run tests to generate coverage statistics
         run: |
-          ./build/gbe.utility/tests/dina_utility_test --gtest_output=xml || echo "Tests failed"
+          ./build/gbe.utility/tests/dina_utility_test --gtest_output=xml:utest/ || echo "Tests failed"
       - name: LS dir build
         run: ls build/
       - name: LS dir gbe.utility
