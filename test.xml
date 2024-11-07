@@ -1,5 +1,5 @@
 <testExecutions version="1">
-  <file path="gbe.utility/tests/version.cpp">
+  <file path="test_rws.c">
 	<testCase name="VersionTest" duration="5"/>
 	<testCase name="test2" duration="500">
 	  <skipped/>
