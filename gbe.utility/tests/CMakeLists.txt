@@ -4,10 +4,10 @@ cmake_minimum_required(VERSION 3.22)
 
 # Set the C++ standard to C++17
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O0 --coverage")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --coverage")
 
 # This flags are used if cmake is called with -DCMAKE_BUILD_TYPE=PROFILE set(CMAKE_C_FLAGS_PROFILE --coverage) set(CMAKE_CXX_FLAGS_PROFILE --coverage) add_executable(program example.cpp)
-#set(CMAKE_CXX_FLAGS_PROFILE --coverage)
+# set(CMAKE_CXX_FLAGS_PROFILE --coverage)
 
 include_directories(
     ../include/
