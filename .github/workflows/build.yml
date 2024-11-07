@@ -54,5 +54,6 @@ jobs:
         run: |
           sonar-scanner \
             --define sonar.cfamily.compile-commands="${{ env.BUILD_WRAPPER_OUT_DIR }}/compile_commands.json" \
-            --define sonar.coverageReportPaths=coverage.xml \
-            --define sonar.junit.reportPaths=utest/dina_utility_test.xml
+            --define sonar.coverageReportPaths=coverage.xml 
+            #\
+            #--define sonar.junit.reportPaths=utest/dina_utility_test.xml
