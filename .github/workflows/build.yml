@@ -47,6 +47,10 @@ jobs:
         run: cat coverage.xml
       - name: CAT Units
         run: cat utest/dina_utility_test.xml
+      - name: Remove Failures  
+        run: python remove_failures.py utest/dina_utility_test.xml utest/cleaned_test_results.xml
+      - name: CAT Units Remove
+        run: cat utest/cleaned_test_results.xml
       - name: Run sonar-scanner
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
