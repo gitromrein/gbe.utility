@@ -38,6 +38,8 @@ jobs:
       - name: Run tests to generate coverage statistics
         run: |
           ./build/gbe.utility/tests/dina_utility_test
+      - name: LS dir tests NACH
+        run: ls build/gbe.utility/tests
       - name: Run sonar-scanner
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
