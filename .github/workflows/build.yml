@@ -40,9 +40,14 @@ jobs:
           ./build/gbe.utility/tests/dina_utility_test
       - name: LS dir tests NACH
         run: ls build/gbe.utility/tests
+      - name: Collect coverage into one XML report
+        run: |
+          gcovr --sonarqube > coverage.xml
       - name: Run sonar-scanner
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
-          sonar-scanner --define sonar.cfamily.compile-commands="${{ env.BUILD_WRAPPER_OUT_DIR }}/compile_commands.json"
+          sonar-scanner \
+            --define sonar.cfamily.compile-commands="${{ env.BUILD_WRAPPER_OUT_DIR }}/compile_commands.json" \
+            --define sonar.coverageReportPaths=coverage.xml
