@@ -38,12 +38,8 @@ jobs:
       - name: Run tests to generate coverage statistics
         run: |
           ./build/gbe.utility/tests/dina_utility_test --gtest_output=xml:utest/ || echo "Tests failed"
-      - name: LS dir build
-        run: ls build/
-      - name: LS dir gbe.utility
-        run: ls build/gbe.utility/
-      - name: LS dir tests
-        run: ls build/gbe.utility/tests
+      - name: LS dir NACH
+        run: ls -R
       - name: Collect coverage into one XML report
         run: |
           gcovr --sonarqube > coverage.xml
